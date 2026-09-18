@@ -217,3 +217,10 @@
 document.querySelectorAll('[data-meter-fill]').forEach(function(e){e.style.width=pct+'%';});
 document.querySelectorAll('[data-meter-raised]').forEach(function(e){e.textContent='$'+RAISED.toLocaleString();});})();
 </script>
+
+<script>
+(function(){function post(){try{parent.postMessage({smashHeight:document.documentElement.scrollHeight},"*");}catch(e){}}
+window.addEventListener("load",post);window.addEventListener("resize",post);
+if(window.ResizeObserver){new ResizeObserver(post).observe(document.body);}
+setTimeout(post,1200);})();
+</script>
