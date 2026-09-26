@@ -26,6 +26,11 @@ h1{font-weight:800;font-size:clamp(28px,5vw,46px);line-height:1.06;letter-spacin
 .rgo{margin-top:22px;display:inline-flex;align-items:center;gap:9px;align-self:flex-start;background:var(--pine);color:var(--yellow);font-size:13.5px;font-weight:700;padding:11px 18px;border-radius:999px;transition:gap .18s ease}
 .route:hover .rgo{gap:14px}
 .foot{margin-top:34px;font-size:12px;color:var(--on-dark-soft);letter-spacing:.02em}
+.route.soon{opacity:.66;cursor:default;border:2px dashed rgba(4,56,43,.28);background:rgba(247,242,228,.6)}
+.route.soon:hover{transform:none;border-color:rgba(4,56,43,.28);box-shadow:none}
+.route.soon .rgo{background:#d8ccae;color:#7a6f52}
+.route.soon:hover .rgo{gap:9px}
+.pill{display:inline-block;margin-left:8px;font-size:9.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;background:#e7dcc2;color:#7a6a3c;padding:3px 9px;border-radius:999px;vertical-align:middle}
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="smash" viewBox="89 188 422 223">
 <defs>
@@ -49,12 +54,12 @@ h1{font-weight:800;font-size:clamp(28px,5vw,46px);line-height:1.06;letter-spacin
   <h1>Medell&iacute;n&rsquo;s all-day social wellness club.</h1>
   <div class="tag">El Poblado &middot; Opening 2027</div>
   <div class="routes">
-    <a class="route" href="https://www.smashwellness.club/founding-members" target="_top" onclick="try{parent.postMessage({smashGo:this.getAttribute('href')},'*');}catch(e){}">
-      <div class="rk">For members</div>
+    <div class="route soon">
+      <div class="rk">For members <span class="pill">Coming soon</span></div>
       <div class="rt">Become a founding member</div>
-      <div class="rd">Join the first 50. Lock in the lowest rate for life &mdash; healthy food, gym, sauna &amp; cold plunge, hot yoga, coworking, elixir bar, and community, all under one roof.</div>
-      <span class="rgo">Explore membership &rarr;</span>
-    </a>
+      <div class="rd">Join the first 50 and lock in the lowest rate for life &mdash; healthy food, gym, sauna &amp; cold plunge, hot yoga, coworking, elixir bar, and community, all under one roof. Founding memberships open soon.</div>
+      <span class="rgo">Coming soon</span>
+    </div>
     <a class="route" href="https://www.smashwellness.club/investors" target="_top" onclick="try{parent.postMessage({smashGo:this.getAttribute('href')},'*');}catch(e){}">
       <div class="rk">For investors</div>
       <div class="rt">See the opportunity</div>
